@@ -27,24 +27,24 @@
             {i === 0 ? tokenSymbol0 : tokenSymbol1}
           </span>
 
-          <div 
-            class="tooltip" 
-            data-tip={clsx(i === 0 
-              ? `${formatDecimals(BN(amount0Now).dividedBy(BN(amount0Start)).toNumber(), 2)}%` 
+          <div
+            class="tooltip"
+            data-tip={clsx(i === 0
+              ? `${formatDecimals(BN(amount0Now).dividedBy(BN(amount0Start)).toNumber(), 2)}%`
               : `${formatDecimals(BN(amount1Now).dividedBy(BN(amount1Start)).toNumber(), 2)}%`)
             }
           >
             <span class="font-base text-sm">
               {
-                i === 0 
-                ? `${formatDecimals(amount0Start, 8)} -> ${formatDecimals(amount0Now, 8)}` 
+                i === 0
+                ? `${formatDecimals(amount0Start, 8)} -> ${formatDecimals(amount0Now, 8)}`
                 : `${formatDecimals(amount1Start, 8)} -> ${formatDecimals(amount1Now, 8)}`
               }
             </span>
 
             <span class="font-base text-[10px] opacity-60">
-              { i === 0 ? 
-                `(${formatDecimals(BN(amount0Now).dividedBy(BN(amount0Start)).toNumber(), 2)}%)` : 
+              { i === 0 ?
+                `(${formatDecimals(BN(amount0Now).dividedBy(BN(amount0Start)).toNumber(), 2)}%)` :
                 `(${formatDecimals(BN(amount1Now).dividedBy(BN(amount1Start)).toNumber(), 2)}%)` }
             </span>
           </div>
@@ -66,7 +66,7 @@
           {apy}%
         </span>
       </div>
-    
+
       <div class="flex justify-between">
         <span class="text-sm">
           {$_("profit")}
