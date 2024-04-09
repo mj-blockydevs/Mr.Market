@@ -20,4 +20,5 @@
     .bg-gray-100 {
         background-color: #F8FAFC;
     }
+
 </style>
