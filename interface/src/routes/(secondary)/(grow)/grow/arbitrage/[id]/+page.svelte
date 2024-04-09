@@ -49,7 +49,7 @@
     exchange0Icon={placeholder.exchangeIcon0}
     exchange1Icon={placeholder.exchangeIcon1}
   />
-  <div class="max-w-24rem flex flex-col rounded-xl border border-base-200 relative">
+  <div class="max-w-24rem shadow-md flex flex-col rounded-xl border border-base-200 relative">
     <Pairs
       exchange0={placeholder.exchange0}
       exchange1={placeholder.exchange1}
@@ -81,7 +81,6 @@
         flex: 1;
         display: flex;
         flex-direction: column;
-        padding: 1rem;
         width: 100%;
         margin: 0 auto;
         box-sizing: border-box;

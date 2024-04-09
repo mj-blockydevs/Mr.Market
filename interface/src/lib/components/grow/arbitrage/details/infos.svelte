@@ -14,16 +14,16 @@
   export let createdAt = '';
 </script>
 
-<div class="flex flex-col p-6 space-y-6">
+<div class="flex flex-col mt-2 space-y-6">
   <div class="flex flex-col space-y-4">
-    <span class="opacity-60 text-sm">
+    <span class="font-bold p-6 text-sm  py-3 bg-gray-100">
       {$_("balance")}
     </span>
 
-    <div class="flex flex-col space-y-2">
+    <div class="flex px-6 flex-col space-y-2">
       {#each Array(2) as _, i}
         <div class="flex items-center justify-between">
-          <span class="text-sm font-base">
+          <span class="text-sm font-bold">
             {i === 0 ? tokenSymbol0 : tokenSymbol1}
           </span>
 
@@ -54,12 +54,12 @@
   </div>
 
   <div class="flex flex-col space-y-4">
-    <span class="opacity-60 text-sm">
+    <span class="font-bold text-sm bg-gray-100 p-3 px-6">
       {$_("details")}
     </span>
-    <div class="flex flex-col space-y-4">
+    <div class="flex flex-col space-y-4 px-6 pb-6">
       <div class="flex justify-between">
-        <span class="text-sm">
+        <span class="text-sm font-bold">
           {$_("apy")}
         </span>
         <span class="text-sm">
@@ -68,7 +68,7 @@
       </div>
 
       <div class="flex justify-between">
-        <span class="text-sm">
+        <span class="text-sm font-bold">
           {$_("profit")}
         </span>
         <span class="text-sm">
@@ -77,7 +77,7 @@
       </div>
 
       <div class="flex justify-between">
-        <span class="text-sm">
+        <span class="text-sm font-bold">
           {$_("created_at")}
         </span>
         <span class="text-sm">
@@ -87,3 +87,8 @@
     </div>
   </div>
 </div>
+<style>
+    .bg-gray-100 {
+        background-color: #F8FAFC;
+    }
+</style>
